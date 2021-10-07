@@ -13,6 +13,14 @@
         </li>
 
         <li>
+            <a href="{{ route('tabela_sistemateste') }}">
+                <i class="fas fa-table"></i>
+                <span class="links_name">{{ ('Tabela') }}</span>
+            </a>
+            <span class="tooltip">{{ ('Tabela') }}</span>
+        </li>
+
+        <li>
             <a href="{{ route('painel') }}">
                 <i class="fas fa-th"></i>
                 <span class="links_name">{{ ('Painel de Produtos') }}</span>
@@ -36,7 +44,7 @@
             <div class="profile-details">
                 <i class="fas fa-user"></i>
             <div class="name_job">
-                <div class="name">Gabriel Souza</div>
+                <div class="name">{{ Auth::user()->name }}</div>
                 <div class="job">Administrador</div>
             </div>
             </div>

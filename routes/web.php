@@ -16,4 +16,6 @@ Route::group(['middleware' => 'auth:web'], function () {
     Route::post('/sistemateste/create', [TesteController::class, 'create'])->name('create_sistemateste');
     Route::post('/sistemateste/edit', [TesteController::class, 'edit'])->name('edit_sistemateste');
     Route::post('/sistemateste/destroy', [TesteController::class, 'destroy'])->name('destroy_sistemateste');
+    Route::get('/sistemateste/tabela', [TesteController::class, 'tabela'])->name('tabela_sistemateste');
+    
 });

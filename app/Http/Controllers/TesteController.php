@@ -14,10 +14,13 @@ class TesteController extends Controller
 
     public function index()
     {
-        $testes = Teste::all();
-        return view('st.home', compact('testes'));
+        return view('st.home');
     }
 
+    public function tabela(){
+        return view('st.tabela');
+    }
+    
     public function create(Request $request)
     {
         $teste['dados'] = Teste::create([
