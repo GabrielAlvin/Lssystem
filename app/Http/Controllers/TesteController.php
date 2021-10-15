@@ -20,6 +20,14 @@ class TesteController extends Controller
     public function tabela(){
         return view('st.tabela');
     }
+
+    public function documentos(){
+        return view('st.documentos');
+    }
+
+    public function perfil(){
+        return view('st.perfil');
+    }
     
     public function create(Request $request)
     {

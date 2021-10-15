@@ -21,6 +21,22 @@
         </li>
 
         <li>
+            <a href="{{ route('documentos_sistemateste') }}">
+                <i class="fas fa-file-alt"></i>
+                <span class="links_name">{{ ('Documentos') }}</span>
+            </a>
+            <span class="tooltip">{{ ('Documentos') }}</span>
+        </li>
+
+        <li>
+            <a href="{{ route('perfil_sistemateste') }}">
+                <i class="fas fa-user"></i>
+                <span class="links_name">{{ ('Perfil') }}</span>
+            </a>
+            <span class="tooltip">{{ ('Perfil') }}</span>
+        </li>
+
+        <li>
             <a href="{{ route('painel') }}">
                 <i class="fas fa-th"></i>
                 <span class="links_name">{{ ('Painel de Produtos') }}</span>
@@ -45,7 +61,7 @@
                 <i class="fas fa-user"></i>
             <div class="name_job">
                 <div class="name">{{ Auth::user()->name }}</div>
-                <div class="job">Administrador</div>
+                <div class="job">{{ Auth::user()->funcao }}</div>
             </div>
             </div>
             <i class='bx bx-log-out' id="log_out" ></i>
