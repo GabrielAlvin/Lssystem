@@ -39,3 +39,25 @@ var myChart = new Chart(
   document.getElementById('myChart'),
   config
 );
+
+$('#icon_password1').click(function(e) {
+  e.preventDefault();
+  if ( $('#senhaatual').attr('type') == 'password' ) {
+    $('#senhaatual').attr('type', 'text');
+    $('#icon_password1').attr('class', 'fa fa-eye');
+  } else {
+      $('#senhaatual').attr('type', 'password');
+      $('#icon_password1').attr('class', 'fa fa-eye-slash');
+  }
+});
+
+$('#icon_password2').click(function(e) {
+  e.preventDefault();
+  if ( $('#senhanova').attr('type') == 'password' ) {
+    $('#senhanova').attr('type', 'text');
+    $('#icon_password2').attr('class', 'fa fa-eye');
+  } else {
+      $('#senhanova').attr('type', 'password');
+      $('#icon_password2').attr('class', 'fa fa-eye-slash');
+  }
+});
