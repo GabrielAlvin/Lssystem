@@ -21,6 +21,14 @@
         </li>
 
         <li>
+            <a href="{{ route('calendario_sistemateste') }}">
+                <i class="fas fa-calendar-alt"></i>
+                <span class="links_name">{{ ('Calendario') }}</span>
+            </a>
+            <span class="tooltip">{{ ('Calendario') }}</span>
+        </li>
+        
+        <li>
             <a href="{{ route('documentos_sistemateste') }}">
                 <i class="fas fa-file-alt"></i>
                 <span class="links_name">{{ ('Documentos') }}</span>
@@ -34,6 +42,14 @@
                 <span class="links_name">{{ ('Perfil') }}</span>
             </a>
             <span class="tooltip">{{ ('Perfil') }}</span>
+        </li>
+
+        <li>
+            <a href="">
+                <i class="fas fa-cog"></i>
+                <span class="links_name">{{ ('Configurações') }}</span>
+            </a>
+            <span class="tooltip">{{ ('Configurações') }}</span>
         </li>
 
         <li>

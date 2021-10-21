@@ -28,6 +28,10 @@ class TesteController extends Controller
     public function perfil(){
         return view('st.perfil');
     }
+
+    public function calendario(){
+        return view('st.calendario');
+    }
     
     public function create(Request $request)
     {

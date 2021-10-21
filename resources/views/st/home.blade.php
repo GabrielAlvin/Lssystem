@@ -42,6 +42,12 @@
                     <li class="nav-item">
                         "x-editable": "^1.5.1"
                     </li>
+                    <li class="nav-item">
+                        "moment": "^2.29.1"
+                    </li>
+                    <li class="nav-item">
+                        "fullcalendar": "^4.0.0-alpha"
+                    </li>
                 </ul>
             </div>
             <div class="col-md-6 my-1">
@@ -59,6 +65,34 @@
 
 @push('scripts')
 <script>
+    const labels = [
+    'JAN',
+    'FEV',
+    'MAR',
+    'ABR',
+    'MAI',
+    'JUN',
+    ];
 
+    const data = {
+    labels: labels,
+    datasets: [{
+        label: 'Meus ganhos',
+        backgroundColor: '#ad9536',
+        borderColor: '#243147',
+        data: [0, 10, 5, 2, 2, 3, 5],
+    }]
+    };
+
+    const config = {
+    type: 'line',
+    data: data,
+    options: {}
+    };
+
+    var myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+    );
 </script>
 @endpush

@@ -15,11 +15,16 @@ mix
     .scripts('node_modules/bootstrap-table/dist/extensions/export/bootstrap-table-export.js', 'public/js/bootstrap-table-export.js')
     .scripts('node_modules/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.js', 'public/js/bootstrap-editable.js')
     .scripts('node_modules/bootstrap-table/dist/extensions/editable/bootstrap-table-editable.js', 'public/js/bootstrap-table-editable.js')
+    .scripts('node_modules/fullcalendar/dist/fullcalendar.js', 'public/js/fullcalendar.js')
+    .scripts('node_modules/fullcalendar/dist/locale-all.js', 'public/js/locale-all.js')
+    .scripts('node_modules/moment/moment.js', 'public/js/moment.js')
     // sass
     .sass('resources/sass/app.scss', 'public/css/app.css')
     .css('resources/css/style.css', 'public/css/style.css')
     .css('node_modules/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css', 'public/css/bootstrap-editable.css')
     .css('node_modules/bootstrap-table/dist/bootstrap-table.css', 'public/css/bootstrap-table.css')
+    .css('node_modules/fullcalendar/dist/fullcalendar.css', 'public/css/fullcalendar.css')
+    .css('node_modules/fullcalendar/dist/fullcalendar.print.css', 'public/css/fullcalendar.print.css')
     .copy('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/webfonts') 
     .sourceMaps()
     //Versionamento

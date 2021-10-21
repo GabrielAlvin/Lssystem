@@ -13,6 +13,8 @@
     <link href="{{ url(mix('css/bootstrap-table.css')) }}" rel="stylesheet">
     <link href="{{ url(mix('css/bootstrap-editable.css')) }}" rel="stylesheet">
     <link href="{{ url(mix('css/app.css')) }}" rel="stylesheet">
+    {{-- <link href="{{ url(mix('css/fullcalendar.print.css')) }}" rel="stylesheet"> --}}
+    <link href="{{ url(mix('css/fullcalendar.css')) }}" rel="stylesheet">
     <link href="{{ url(mix('css/style.css')) }}" rel="stylesheet">
 </head>
 <body class="bg-light">
@@ -29,7 +31,9 @@
     <script src="{{ url(mix('js/bootstrap-table-locale-all.js')) }}"></script>
     <script src="{{ url(mix('js/bootstrap-table-export.js')) }}"></script>
     <script src="{{ url(mix('js/tableExport.min.js')) }}"></script>
-    
+    <script src="{{ url(mix('js/moment.js'))}}"></script>
+    <script src="{{ url(mix('js/fullcalendar.js'))}}"></script>
+    <script src="{{ url(mix('js/locale-all.js'))}}"></script>
     @stack('scripts')
 </body>
 </html>

@@ -4,17 +4,19 @@
 <div class="content-page">
    <div class="container">
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-5">
                 <div class="card my-4 shadow-lg rounded">
-                    <div class="card-body">
-                        <h5>Nome</h5>
-                        <h5>E-mail</h5>
-                        <h5>Função</h5>
+                    <div class="card-body px-3">
+                        <h2 class="mt-3">Usuario</h2>
+                       
+                        <p class="mt-3">Nome: {{ Auth::user()->name }}</p>
+                        <p class="mt-3">E-mail: {{ Auth::user()->email }}</p>
+                        <p class="mt-3">Função: {{ Auth::user()->funcao }}</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-5">
+            <div class="col-md-6 offset-md-1">
                 <div class="card my-4 shadow-lg rounded">
                     <div class="card-body py-4 px-5">
                         <h5 class="card-title">Perfil</h5>
@@ -76,6 +78,26 @@
 
 @push('scripts')
 <script>
+    $('#icon_password1').click(function(e) {
+        e.preventDefault();
+        if ( $('#senhaatual').attr('type') == 'password' ) {
+            $('#senhaatual').attr('type', 'text');
+            $('#icon_password1').attr('class', 'fa fa-eye');
+        } else {
+            $('#senhaatual').attr('type', 'password');
+            $('#icon_password1').attr('class', 'fa fa-eye-slash');
+        }
+    });
 
+    $('#icon_password2').click(function(e) {
+        e.preventDefault();
+        if ( $('#senhanova').attr('type') == 'password' ) {
+            $('#senhanova').attr('type', 'text');
+            $('#icon_password2').attr('class', 'fa fa-eye');
+        } else {
+            $('#senhanova').attr('type', 'password');
+            $('#icon_password2').attr('class', 'fa fa-eye-slash');
+        }
+    });
 </script>
 @endpush
