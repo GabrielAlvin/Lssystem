@@ -4,7 +4,7 @@
 <div class="content-page mt-5">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">  
+            <div class="col-md-4 mt-4">  
                 <div class="d-flex justify-content-between">
                     <h5 class="mt-2 bold">Escala de Funcionarios</h5>
                     <!-- Button trigger modal -->
@@ -114,7 +114,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 mt-4">
                 <div id='calendar'></div>
             </div>
         </div>
